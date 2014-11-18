@@ -1,0 +1,4 @@
+gitdir
+======
+
+git directory
