@@ -1,0 +1,58 @@
+***************************************
+
+
+killall A5500UI
+
+cd run/bin
+tftp -r -g A5500UI_yw 10.10.10.10
+
+mv A5500UI_yw A5500UI
+chmod 755 A5500UI
+
+./A5500UI -qws &
+
+
+***************************************
+
+
+killall A5500UI
+
+cd run/bin
+./A5500UI -qws &
+
+
+****************************************
+
+
+killall A5500UI
+
+cd run/bin
+tftp -r -g A5500_UI 10.10.10.164
+
+mv A5500_UI A5500UI
+chmod 755 A5500UI
+
+./A5500UI -qws &
+
+
+****************************************
+
+
+tftp -r -g 5.3.1.tar.gz 10.10.10.164
+chmod 755 5.3.1.tar.gz
+
+****************************************
+
+killall A5500UI
+
+cd run/bin
+tftp -r -g qt_app 10.10.10.164
+
+chmod 755 qt_app
+
+./qt_app -qws 
+
+
+
+
+
